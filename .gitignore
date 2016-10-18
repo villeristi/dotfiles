@@ -19,5 +19,8 @@ Thumbs.db
 # Vagrant
 .vagrant
 
-# Node debugs
-npm-debug.log
+# Log files
+*.log
+
+# Node modules
+node_modules

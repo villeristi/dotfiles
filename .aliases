@@ -24,6 +24,9 @@ alias wpscan='ruby ~/wpscan/wpscan.rb'
 alias cmsmap='python ~/cmsmap/cmsmap.py'
 alias rsa='sudo apachectl restart'
 
+alias setbash='exec bash'
+alias setzsh='exec zsh'
+
 alias vu='vagrant up'
 alias vr='vagrant reload'
 alias vs='vagrant ssh'
