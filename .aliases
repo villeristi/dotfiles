@@ -27,13 +27,15 @@ alias rsa='sudo apachectl restart'
 alias setbash='exec bash'
 alias setzsh='exec zsh'
 
-alias vu='vagrant up'
-alias vr='vagrant reload'
-alias vs='vagrant ssh'
+alias g='git'
+alias h='history'
+alias j='jobs'
 
-alias g="git"
-alias h="history"
-alias j="jobs"
+alias vau='vagrant up'
+alias var='vagrant reload'
+alias vas='vagrant ssh'
+alias vah='vagrant halt'
+alias vad='vagrant destroy'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
