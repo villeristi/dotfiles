@@ -28,16 +28,13 @@ export LESS_TERMCAP_md="${yellow}";
 export MANPAGER='less -X';
 
 export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/php5/bin:$PATH"
-export PATH="$HOME/.composer/vendor/bin"
-export PATH="$HOME/.composer/vendor/bin:$PATH"
-export PATH="/usr/local/share/python:/usr/local/bin:/usr/local/php5/bin"
+export PATH="/usr/local/share/python:/usr/local/bin:/usr/local/php5/bin:$HOME/.composer/vendor/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:/usr/local/share/python:/usr/local/bin:/usr/local/php5/bin:/$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
-export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin"
-export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin"
-
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:/usr/local/share/python:/usr/local/bin:/usr/local/php5/bin:$HOME/.composer/vendor/bin:/$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/9.4/bin"
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$HOME/.composer/vendor/bin"
+export PATH="/usr/local/php5/bin:$PATH"
+export PATH="$PATH:`yarn global bin`"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 eval "$(rbenv init -)"
