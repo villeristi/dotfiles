@@ -9,13 +9,14 @@ alias -- -="cd -"
 # Shortcuts
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias gd="cd ~/Google\ Drive"
 alias db="cd ~/Dropbox"
 
-alias sites="cd ~/Sites"
-alias _wp='cd ~/Sites/_WP'
-alias _dev='cd ~/Sites/_DEVBOX'
-alias _repos='cd ~/Sites/_REPOS'
+alias nah="git reset --soft head~1"
+
+alias _wp='cd ~/Code/WP'
+alias _dev='cd ~/Code/DEVBOX'
+alias _repos='cd ~/Code/REPOS'
+alias _com='cd ~/Code/REPOS/compario'
 
 alias hosts='subl /etc/hosts'
 alias vhosts='subl /etc/apache2/extra/httpd-vhosts.conf'
@@ -33,9 +34,22 @@ alias j='jobs'
 
 alias vau='vagrant up'
 alias var='vagrant reload'
+alias vap='vagrant provision'
 alias vas='vagrant ssh'
 alias vah='vagrant halt'
 alias vad='vagrant destroy'
+
+alias jn='jupyter notebook'
+alias pei='pipenv install'
+alias pes='pipenv shell'
+alias per='pipenv run'
+alias perp='pipenv run python3'
+alias pelr='pipenv lock -r > requirements.txt'
+
+alias doc='docker-compose'
+alias docclear='docker rmi $(docker images --filter dangling=true -q --no-trunc)'
+
+alias dom='docker-machine'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -107,7 +121,7 @@ jscbin="/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources
 unset jscbin;
 
 # Trim new lines and copy to clipboard
-alias c="tr -d '\n' | pbcopy"
+alias copy="tr -d '\n' | pbcopy"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
