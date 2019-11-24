@@ -278,4 +278,3 @@ function docssh() {
     docker exec -i -t "$@" /bin/bash
   fi
 }
-

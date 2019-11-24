@@ -33,6 +33,7 @@ alias j='jobs'
 
 alias vau='vagrant up'
 alias var='vagrant reload'
+alias vap='vagrant provision'
 alias vas='vagrant ssh'
 alias vah='vagrant halt'
 alias vad='vagrant destroy'
@@ -46,6 +47,18 @@ alias perp='pipenv run python3'
 alias pel='pipenv lock -r > requirements.txt'
 alias pipi='pip install -r requirements.txt'
 alias m='perp manage.py'
+
+alias doc='docker-compose'
+alias docclear='docker rmi $(docker images --filter dangling=true -q --no-trunc)'
+
+alias dom='docker-machine'
+
+alias jn='jupyter notebook'
+alias pei='pipenv install'
+alias pes='pipenv shell'
+alias per='pipenv run'
+alias perp='pipenv run python3'
+alias pelr='pipenv lock -r > requirements.txt'
 
 alias doc='docker-compose'
 alias docclear='docker rmi $(docker images --filter dangling=true -q --no-trunc)'
