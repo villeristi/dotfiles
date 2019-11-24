@@ -82,3 +82,6 @@ source $ZSH/oh-my-zsh.sh
 source ~/.exports
 source ~/.aliases
 source ~/.functions
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
